@@ -39,31 +39,31 @@ const NavBar = () => {
           whileHover={{y:-2}} 
           whileTap={{scale: 0.9}}
         >
-          <TwitterIcon className={'w-[1.5rem]'} />
+          <TwitterIcon className={'!w-[1.5rem]'} />
         </motion.a>
         <motion.a href={'https://twitter.com'} target='_blank' 
           whileHover={{y:-2}} 
           whileTap={{scale: 0.9}}
         >
-          <GithubIcon className={'w-[1.5rem]'} />
+          <GithubIcon className={'!w-[1.5rem]'} />
         </motion.a>
         <motion.a href={'https://twitter.com'} target='_blank' 
           whileHover={{y:-2}} 
           whileTap={{scale: 0.9}}
         >
-          <LinkedInIcon className={'w-[1.5rem]'} />
+          <LinkedInIcon className={'!w-[1.5rem]'} />
         </motion.a>
         <motion.a href={'https://twitter.com'} target='_blank' 
           whileHover={{y:-2}} 
           whileTap={{scale: 0.9}}
         >
-          <PinterestIcon className={'w-[1.5rem]'} />
+          <PinterestIcon className={'!w-[1.5rem]'} />
         </motion.a>
         <motion.a href={'https://twitter.com'} target='_blank' 
           whileHover={{y:-2}} 
           whileTap={{scale: 0.9}}
         >
-          <DribbbleIcon className={'w-[1.5rem]'} />
+          <DribbbleIcon className={'!w-[1.5rem]'} />
         </motion.a>
       </nav>
       

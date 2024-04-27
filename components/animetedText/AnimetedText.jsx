@@ -32,7 +32,7 @@ export default function AnimetedText({text,className}) {
       text-center  overflow-hidden`}
     >
       <motion.h1 
-        className={`inline-block w-full text-dark font-bold capitalize text-8xl 
+        className={`inline-block w-full text-dark font-bold capitalize text-[5rem]
         ${className}`}
         variants={quote}
         initial="initial"

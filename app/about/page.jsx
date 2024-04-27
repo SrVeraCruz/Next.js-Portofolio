@@ -8,9 +8,11 @@ import profilePic from '../../public/img/profile/developer-pic-2.jpg'
 import { useEffect, useRef } from 'react'
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import Skills from '@/components/skills/Skills'
+import Experiences from '@/components/experiences/Experiences'
+import Education from '@/components/education/Education'
 
 const AnimetedNumbers = ({value}) => {
-  const ref = useRef();
+  const ref = useRef(null);
 
   const motionValue = useMotionValue(0)
   const springValue = useSpring(motionValue, { duration: 3000 })
@@ -93,6 +95,8 @@ export default function AboutPage(){
           </div>
 
           <Skills />
+          <Experiences />
+          <Education />
 
         </Layout>
       </main>

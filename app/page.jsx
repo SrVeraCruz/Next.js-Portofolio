@@ -7,6 +7,7 @@ import Link from "next/link";
 import { LinkArrow } from "../components/icons/Icons";
 import HireMe from "@/components/hireMe/HireMe";
 import Head from "next/head";
+import Button from "@/components/button/Button";
 
 export default function Home() {
   return (
@@ -32,11 +33,12 @@ export default function Home() {
                 React.js and web development.
               </p>
               <div className="flex items-center self-start mt-2 gap-4">
-                <Link href="/resume/CV-Resume.pdf" target="_blank " download={true}
-                  className="flex gap-1 items-center bg-dark p-2 px-6 rounded-lg text-lg font-semibold text-light hover:bg-light hover:text-dark transition  border-2 border-solid border-transparent hover:border-dark"
-                  >
-                  Resume <LinkArrow className={'w-6'} />
-                </Link>
+                <Button>
+                  <Link href="/resume/CV-Resume.pdf" target="_blank " download={true}>
+                    Resume 
+                  </Link>
+                  <LinkArrow className={'w-6'} />
+                </Button>
                 <Link href="mailto:veracruzdudu@gmail.com" target="_blank"
                   className="font-medium text-lg underline text-dark"
                   >
