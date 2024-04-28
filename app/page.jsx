@@ -16,7 +16,7 @@ export default function Home() {
         <title>VeraCruz | Home Page</title>
         <meta name='description' content="Home Page Portofolio" />
       </Head>
-      <main className="flex items-center text-dark w-full min-h-[calc(100vh-5.5rem)]">
+      <main className="flex items-center text-dark dark:text-light w-full min-h-[calc(100vh-5.5rem)]">
         <Layout className="!p-0">
           <div className="flex items-center justify-center w-full">
             <div className="w-1/2 max-h-[calc(100vh-5.5rem)]">
@@ -40,7 +40,7 @@ export default function Home() {
                   <LinkArrow className={'w-6'} />
                 </Button>
                 <Link href="mailto:veracruzdudu@gmail.com" target="_blank"
-                  className="font-medium text-lg underline text-dark"
+                  className="font-medium text-lg underline text-dark dark:text-light"
                   >
                   Contact
                 </Link>

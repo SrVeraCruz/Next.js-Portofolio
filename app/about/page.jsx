@@ -10,6 +10,7 @@ import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import Skills from '@/components/skills/Skills'
 import Experiences from '@/components/experiences/Experiences'
 import Education from '@/components/education/Education'
+import CardBox from '@/components/cardBox/CardBox'
 
 const AnimetedNumbers = ({value}) => {
   const ref = useRef(null);
@@ -45,14 +46,14 @@ export default function AboutPage(){
         <title>VeraCruz | About Page</title>
         <meta name='description' content="About Page Portofolio" />
       </Head>
-      <main className='w-full flex flex-col items-center justify-center'>
+      <main className='w-full flex flex-col items-center justify-center dark:!text-light'>
         <Layout className='pt-8'>
 
           <AnimetedText text={"assion Fuels Purpose! "} className={"mb-16 text-7xl"} />
 
           <div className='grid w-full grid-cols-8 gap-16'>
             <div className='col-span-3 flex flex-col items-start justify-start'>
-              <h2 className='mb-4 text-lg font-bold uppercase text-dark/75'>Biography</h2>
+              <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>Biography</h2>
               <p className='font-medium leading-7 tracking-wide'>
                 Hi, I'm Vera Cruz, a web developer and UI/UX designer with a passion for creating beautiful, functional, and user-centered digital experiences. With  1 years of experience in the field. I am always looking for new and innovative ways to bring my clients' visions to life.
               </p>
@@ -64,31 +65,28 @@ export default function AboutPage(){
               </p>
             </div>
 
-            <div 
-              className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8'
-            >
-              <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark' />
+            <CardBox className="col-span-3 h-max  p-8">             
               <Image src={profilePic} alt='Vera Cruz' />
-            </div>
+            </CardBox>
 
             <div className='col-span-2 flex flex-col items-end justify-between'>
               <div className='flex flex-col items-end justify-center'>
                 <span className='inline-block text-7xl font-bold'>
                   <AnimetedNumbers value={50} />+
                 </span>
-                <h2 className='text-xl font-medium capitalize text-dark/75'>satisfied clients</h2>
+                <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75'>satisfied clients</h2>
               </div>
               <div className='flex flex-col items-end justify-center'>
                 <span className='inline-block text-7xl font-bold'>
                   <AnimetedNumbers value={40} />+
                 </span>
-                <h2 className='text-xl font-medium capitalize text-dark/75'>projects completed</h2>
+                <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75'>projects completed</h2>
               </div>
               <div className='flex flex-col items-end justify-center'>
                 <span className='inline-block text-7xl font-bold'>
                   <AnimetedNumbers value={1} />+
                 </span>
-                <h2 className='text-xl font-medium capitalize text-dark/75'>years of experience</h2>
+                <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75'>years of experience</h2>
               </div>
             </div>
 

@@ -1,6 +1,7 @@
 import { motion, useScroll } from "framer-motion"
 import { useRef } from "react"
 import LiIcon from "../liIcon/LiIcon"
+import ProgressBar from "../progressBar/ProgressBar"
 
 const Details = ({type, time, place, info}) => {
   const ref = useRef(null)
@@ -45,10 +46,7 @@ export default function Education() {
 
       <div ref={ref} className="w-[75%] mx-auto relative">
 
-        <motion.div 
-          className="absolute top-1 left-8 w-[4px] bg-dark h-full origin-top" 
-          style={{scaleY: scrollYProgress}}
-        />
+      <ProgressBar scrollYProgress={scrollYProgress} />
 
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details

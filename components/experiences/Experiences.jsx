@@ -1,6 +1,7 @@
 import { motion, useScroll } from "framer-motion"
 import { useRef } from "react"
 import LiIcon from "../liIcon/LiIcon"
+import ProgressBar from "../progressBar/ProgressBar"
 
 const Details = ({position, company, companyLink, time, address, work}) => {
   const ref = useRef(null)
@@ -17,7 +18,7 @@ const Details = ({position, company, companyLink, time, address, work}) => {
       >
         <h3 className="capitalize font-bold text-2xl">
           {position}&nbsp;
-          <a href={companyLink || "#"} target="_blank" className="text-primary capitalize">
+          <a href={companyLink || "#"} target="_blank" className="text-primary dark:text-primaryDark capitalize">
             @{company}
           </a>
         </h3>
@@ -48,10 +49,7 @@ export default function Experiences() {
 
       <div ref={ref} className="w-[75%] mx-auto relative">
 
-        <motion.div 
-          className="absolute top-1 left-8 w-[4px] bg-dark h-full origin-top" 
-          style={{scaleY: scrollYProgress}}
-        />
+        <ProgressBar scrollYProgress={scrollYProgress} />
 
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details

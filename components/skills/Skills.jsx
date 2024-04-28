@@ -1,14 +1,13 @@
 import { motion } from "framer-motion"
 
-const Skill = ({name, x, y}) => {
+const Skill = ({name, x, y, className}) => {
   return (
     <motion.div 
-      className="flex items-center justify-center rounded-full bg-dark text-light font-semibold shadow-dark py-3 px-6  absolute"
+      className={`flex items-center justify-center rounded-full bg-dark text-light font-semibold shadow-dark dark:shadow-light dark:bg-light dark:text-dark py-3 px-6  absolute ${className}`}
       whileHover={{ scale: 1.08 }}
       whileTap={{ scale: 0.9 }}
       initial={{ x:0, y:0 }}
-      whileInView={{ x:x, y:y }}
-      transition={{ duration: 1.5 }}
+      whileInView={{ x:x, y:y, transition:{ duration: 1.5 }} }
       viewport={{ once: true }}
     >
       {name}
@@ -21,9 +20,9 @@ export default function Skills () {
     <>
       <h2 className="font-bold text-7xl mt-44 w-full text-center">Skills</h2>
       <div 
-        className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight"
+        className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark"
       >
-        <Skill name="Web" />
+        <Skill name="Web" className="!p-8" />
         <Skill name="HTML" x="-25vw" y="2vw" />
         <Skill name="Css" x="-5vw" y="-10vw" />
         <Skill name="JavaScript" x="20vw" y="6vw" />
