@@ -66,7 +66,10 @@ export default function AboutPage(){
             </div>
 
             <CardBox className="col-span-3 h-max  p-8">             
-              <Image src={profilePic} alt='Vera Cruz' />
+              <Image src={profilePic} alt='Vera Cruz' priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className='w-full h-auto'
+              />
             </CardBox>
 
             <div className='col-span-2 flex flex-col items-end justify-between'>

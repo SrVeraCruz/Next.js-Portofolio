@@ -20,7 +20,10 @@ export default function Home() {
         <Layout className="!p-0">
           <div className="flex items-center justify-center w-full">
             <div className="w-1/2 max-h-[calc(100vh-5.5rem)]">
-              <Image src={profilePic} alt="Vera Cruz" className="w-auto h-full object-cover" />
+              <Image src={profilePic} alt="Vera Cruz" priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+                className="w-auto h-full object-cover" 
+              />
             </div>
             <div className="w-1/2 flex flex-col items-center self-center">
               <AnimetedText 

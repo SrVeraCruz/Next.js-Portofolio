@@ -13,7 +13,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body 
         className={montserrat.className+' bg-light dark:bg-dark dark:text-light w-full min-h-screen'}
       >

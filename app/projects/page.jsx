@@ -18,11 +18,13 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
     <article>
       <CardBox className="rounded-3xl rounded-br-2xl flex items-center p-12">
         <Link href={link} className="w-1/2 cursor-pointer overflow-hidden rounded-lg">
-          <FramerImage src={img} alt={title} 
+          <FramerImage src={img} alt={title}
             className="w-full h-auto" 
             whileHover={{scale: 1.05}}
             transition={{duration: 0.2}}
-            />
+            priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+          />
         </Link>
         <div className="w-1/2 flex flex-col items-start justify-between pl-6">
           <span className="text-primary dark:text-primaryDark font-medium text-xl">{type}</span>
@@ -55,7 +57,9 @@ const Project = ({type, title, img, link, github}) => {
             className="w-full h-auto" 
             whileHover={{scale: 1.05}}
             transition={{duration: 0.2}}
-            />
+            priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+           />
         </Link>
         <div className="w-full flex flex-col items-start justify-between mt-4">
           <span className="text-primary dark:text-primaryDark font-medium text-xl">{type}</span>
