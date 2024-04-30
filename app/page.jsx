@@ -32,9 +32,9 @@ export default function Home() {
               >
               <AnimetedText 
                 text={"Turning Vision Into Reality With Code And Design."} 
-                className={'!text-6xl !text-left xl:!text-5xl lg:!text-6xl md:!text-5xl sm:!text-3xl lg:!text-center'} 
+                className={'!text-6xl !text-left xl:!text-5xl lg:!text-6xl md:!text-5xl sm:!text-4xl sm:!text-3xl lg:!text-center'} 
               />
-              <p className="py-4 text-base font-medium md:text-sm sm:text-xs">
+              <p className="py-4 text-base font-medium md:text-sm xs:text-xs">
                 As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. 
                 Explore my latest projects and articles, showcasing my expertise in 
                 React.js and web development.
