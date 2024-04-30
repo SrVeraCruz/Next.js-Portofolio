@@ -7,7 +7,7 @@ const Details = ({position, company, companyLink, time, address, work}) => {
   const ref = useRef(null)
 
   return (
-    <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between">
+    <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[60%] md:w-[80%] mx-auto flex flex-col items-center justify-between">
 
       <LiIcon reference={ref} />
 
@@ -16,16 +16,16 @@ const Details = ({position, company, companyLink, time, address, work}) => {
         whileInView={{y: 0}}
         transition={{duration:0.5, type:"spring"}}
       >
-        <h3 className="capitalize font-bold text-2xl">
+        <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
           {position}&nbsp;
           <a href={companyLink || "#"} target="_blank" className="text-primary dark:text-primaryDark capitalize">
             @{company}
           </a>
         </h3>
-        <span className="capitalize font-medium text-dark/75">
+        <span className="capitalize font-medium text-dark dark:text-light/75 text-dark/75">
           {time} | {address}
         </span>
-        <p className="font-medium w-full">
+        <p className="font-medium w-full md:text-sm ">
           {work}
         </p>
       </motion.div>
@@ -42,12 +42,12 @@ export default function Experiences() {
   })
 
   return (
-    <div className="mt-44">
-      <h1 className="font-bold text-7xl text-center mb-28 w-full">
+    <div className="mt-44 xl:mt-36 lg:mt-32 md:mt-24">
+      <h1 className="font-bold text-7xl md:text-6xl xs:text-4xl text-center mb-28 md:mb-20 sm:mb-16 w-full">
         Experiences     
       </h1>
 
-      <div ref={ref} className="w-[75%] mx-auto relative">
+      <div ref={ref} className="w-[75%] lg:w-[90%] md:w-full mx-auto relative">
 
         <ProgressBar scrollYProgress={scrollYProgress} />
 

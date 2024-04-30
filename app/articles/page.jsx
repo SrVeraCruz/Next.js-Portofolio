@@ -30,13 +30,13 @@ const FeaturedArticle = ({img, title, time, summary, link}) => {
         </Link>
         <Link href={link} target='_blank'>
           <h2 
-            className='capitalize text-2xl font-bold my-2 mt-4 hover:underline hover:underline-offset-2'
+            className='capitalize text-2xl font-bold my-2 mt-4 hover:underline hover:underline-offset-2 xs:text-lg'
           >
             {title}
           </h2>
         </Link>
         <p className='text-sm mb-2'>{summary}</p>
-        <span className='text-primary dark:text-primaryDark font-semibold'>{time}</span>
+        <span className='text-primary dark:text-primaryDark font-semibold xs:text-sm'>{time}</span>
       </CardBox>
     </li>
   )
@@ -64,12 +64,12 @@ const MovingImg = ({img, title, link}) => {
       onMouseMove={handleMouse}
       onMouseLeave={handleMouseOver}
     >
-      <h2 className='font-semibold text-xl capitalize hover:underline'>{title}</h2>
+      <h2 className='font-semibold text-xl capitalize hover:underline xs:text-lg'>{title}</h2>
       <FramerImage ref={imgRef} src={img} alt={title} 
         style={{x: x, y: y}}
         initial={{opacity: 0}}
         whileInView={{opacity: 1, transition: {duration: 0.2}}}
-        className='w-96 h-auto hidden absolute rounded-lg z-10'
+        className='w-96 h-auto hidden absolute rounded-lg z-10 md:!hidden'
         priority
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw" 
       />
@@ -80,7 +80,7 @@ const MovingImg = ({img, title, link}) => {
 const Article = ({img, title, date, link}) => {
   return (
     <motion.li 
-      className='relative w-full p-5 my-4 rounded-xl flex items-center justify-between bg-light border border-solid border-dark dark:bg-dark  dark:border-light first:mt-0 border-r-4 border-b-4'
+      className='relative w-full p-5 my-4 rounded-xl flex items-center justify-between bg-light border border-solid border-dark dark:bg-dark  dark:border-light first:mt-0 border-r-4 border-b-4 gap-4 sm:gap-2 sm:flex-col'
       initial={{y: 200}}
       whileInView={{y: 0, transition:{duration: 0.5, ease: "easeInOut"}}}
       viewport={{once: true}}
@@ -90,7 +90,7 @@ const Article = ({img, title, date, link}) => {
         title={title}
         link={link}
       />
-      <span className='text-primary dark:text-primaryDark font-semibold pl-4'>{date}</span>
+      <span className='text-primary dark:text-primaryDark font-semibold sm:self-start '>{date}</span>
     </motion.li>
   )
 }
@@ -105,7 +105,7 @@ export default function Articles() {
       <main className='w-full flex flex-col items-center justify-center overflow-hidden'>
         <Layout className='pt-8'>
           <AnimetedText text="Words Can Change The World! " className={"mb-16 text-7xl"} />
-          <ul className='grid grid-cols-2 gap-16'>
+          <ul className='grid grid-cols-2 gap-16 md:grid-cols-1 lg:gap-8 md:gap-y-16'>
             <FeaturedArticle 
               img={Article1}
               title="Build A Custom Pagination Component In Reactjs From Scratch"
@@ -124,7 +124,7 @@ export default function Articles() {
             />
           </ul>
 
-          <h2 className='font-bold text-4xl text-center w-full my-16 mt-32'>All Articles</h2>
+          <h2 className='font-bold text-4xl text-center w-full my-16 mt-32 md:my-10 md:mt-24'>All Articles</h2>
           <ul>
             <Article 
               img={Article2}
