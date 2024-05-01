@@ -84,19 +84,19 @@ export default function AboutPage(){
             >
               <div className='flex flex-col items-end justify-center xl:items-center'>
                 <span className='inline-block text-7xl md:text-6xl sm:text-5xl xs:text-4xl font-bold'>
-                  <AnimetedNumbers value={50} />+
+                  <AnimetedNumbers value={20} />+
                 </span>
-                <h2 className='text-xl font-medium capitalize text-dark/75 md:text-center md:text-lg sm:text-base xs:text-sm dark:text-light/75'>satisfied clients</h2>
+                <h2 className='text-xl font-medium capitalize text-dark/75 md:text-center md:text-lg sm:text-base xs:text-sm dark:text-light/75'>positive feedbacks</h2>
               </div>
               <div className='flex flex-col items-end justify-center xl:items-center'>
                 <span className='inline-block text-7xl md:text-6xl sm:text-5xl xs:text-4xl font-bold'>
-                  <AnimetedNumbers value={40} />+
+                  <AnimetedNumbers value={15} />+
                 </span>
                 <h2 className='text-xl font-medium capitalize text-dark/75 md:text-center md:text-lg sm:text-base xs:text-sm dark:text-light/75'>projects completed</h2>
               </div>
               <div className='flex flex-col items-end justify-center xl:items-center'>
                 <span className='inline-block text-7xl md:text-6xl sm:text-5xl xs:text-4xl font-bold'>
-                  <AnimetedNumbers value={1} />+
+                  <AnimetedNumbers value={2} />+
                 </span>
                 <h2 className='text-xl font-medium capitalize text-dark/75 md:text-center md:text-lg sm:text-base xs:text-sm dark:text-light/75'>years of experience</h2>
               </div>
