@@ -11,6 +11,7 @@ import Skills from '@/components/skills/Skills'
 import Experiences from '@/components/experiences/Experiences'
 import Education from '@/components/education/Education'
 import CardBox from '@/components/cardBox/CardBox'
+import TransitionEffect from '@/components/transitionEffect/TransitionEffect'
 
 const AnimetedNumbers = ({value}) => {
   const ref = useRef(null);
@@ -46,6 +47,7 @@ export default function AboutPage(){
         <title>VeraCruz | About Page</title>
         <meta name='description' content="About Page Portofolio" />
       </Head>
+      <TransitionEffect />
       <main className='w-full flex flex-col items-center justify-center dark:!text-light'>
         <Layout className='!pt-8'>
 

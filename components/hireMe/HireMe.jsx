@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function HireMe({className}) {
   return (
     <div 
-      className={`fixed left-4 bottom-4 flex items-center justify-center overflow-hidden md:absolute md:top-0 md:right-6 sm:right-0 md:bottom-auto md:left-auto z-49 ${className}`}
+      className={`fixed left-4 bottom-4 flex items-center justify-center overflow-hidden md:absolute md:top-0 md:right-6 sm:right-0 md:bottom-auto md:left-auto z-50 ${className}`}
     >
       <div className="w-36 md:w-24 h-auto flex items-center justify-center relative">
 

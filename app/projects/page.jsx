@@ -10,6 +10,7 @@ import Project1 from "@/public/img/projects/crypto-screener-cover-image.jpg"
 import Button from "@/components/button/Button";
 import { motion } from "framer-motion";
 import CardBox from "@/components/cardBox/CardBox";
+import TransitionEffect from "@/components/transitionEffect/TransitionEffect";
 
 const FramerImage = motion(Image)
 
@@ -92,6 +93,7 @@ export default function Projects() {
         <title>VeraCruz | Projects Page</title>
         <meta name='description' content="Projects Page Portofolio" />
       </Head>
+      <TransitionEffect />
       <main className="w-full mb-16 xs:mb-8 flex flex-col items-center justify-center">
         <Layout className="pt-8">
           <AnimetedText text={"Imagination  Trumps Knowledge!"} className="mb-8" />

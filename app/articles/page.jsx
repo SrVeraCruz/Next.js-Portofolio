@@ -10,6 +10,7 @@ import Article1 from "@/public/img/articles/pagination_component_in_reactjs.jpg"
 import Article2 from "@/public/img/articles/What_is_higher_order_component_in_React.jpg"
 import { motion, useMotionValue } from 'framer-motion'
 import CardBox from '@/components/cardBox/CardBox'
+import TransitionEffect from '@/components/transitionEffect/TransitionEffect'
 
 const FramerImage = motion(Image)
 
@@ -102,6 +103,7 @@ export default function Articles() {
         <title>VeraCruz | Articles Page</title>
         <meta name='description' content="Articles Page Portofolio" />
       </Head>
+      <TransitionEffect />
       <main className='w-full flex flex-col items-center justify-center overflow-hidden'>
         <Layout className='pt-8'>
           <AnimetedText text="Words Can Change The World! " className={"mb-16 text-7xl"} />

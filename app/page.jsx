@@ -1,3 +1,5 @@
+'use client'
+
 import Layout from "../components/layout/Layout";
 import Image from "next/image";
 import profilePic from '../public/img/profile/developer-pic-1.png'
@@ -8,6 +10,7 @@ import { LinkArrow } from "../components/icons/Icons";
 import HireMe from "@/components/hireMe/HireMe";
 import Head from "next/head";
 import Button from "@/components/button/Button";
+import TransitionEffect from "@/components/transitionEffect/TransitionEffect";
 
 export default function Home() {
   return (
@@ -16,6 +19,7 @@ export default function Home() {
         <title>VeraCruz | Home Page</title>
         <meta name='description' content="Home Page Portofolio" />
       </Head>
+      <TransitionEffect />
       <main className="flex items-center text-dark dark:text-light w-full min-h-[calc(100vh-5.5rem)]">
         <Layout className="!py-2 md:!pb-7">
           <div className="flex items-center justify-center w-full md:flex-col md:gap-4">

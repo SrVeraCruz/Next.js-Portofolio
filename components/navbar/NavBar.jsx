@@ -13,7 +13,8 @@ const CustomLink = ({ href, title, className=""}) => {
 
   return (
     <Link 
-      className={`${className} relative group ${path === href ? 'font-semibold' : ''}`} href={href}
+      href={href}
+      className={`${className} relative group ${path === href ? 'font-semibold' : ''}`}
     >
       {title}
       <span 
@@ -57,10 +58,11 @@ const NavBar = () => {
   const handleClick = () => {
     setIsOpen(!isOpen)
   }
-
+  
   useEffect(() => {
     setHasMounted(true)
   }, [])
+
 
   return (
     <header 
