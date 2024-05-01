@@ -6,7 +6,8 @@ import Layout from "@/components/layout/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import Project1 from "@/public/img/projects/crypto-screener-cover-image.jpg"
+import FetProject1 from "@/public/img/projects/disney_plus.png"
+import Project1 from "@/public/img/projects/youCine.png"
 import Button from "@/components/button/Button";
 import { motion } from "framer-motion";
 import CardBox from "@/components/cardBox/CardBox";
@@ -99,81 +100,29 @@ export default function Projects() {
           <AnimetedText text={"Imagination  Trumps Knowledge!"} className="mb-8" />
 
           <div className="grid grid-cols-12 gap-24 gap-y-28 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-y-20 sm:gap-x-0">
-            <div className="col-span-12">
-              <FeaturedProject 
-                type="Featured Project"
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
-                img={Project1}
-                link="/"
-                github="/"
-              />
-            </div>
-
-            <div className="col-span-6 sm:col-span-12">
-              <Project 
-                type="Featured Project"
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
-                img={Project1}
-                link="/"
-                github="/"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project 
-                type="Featured Project"
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
-                img={Project1}
-                link="/"
-                github="/"
-              />
-            </div>
 
             <div className="col-span-12">
               <FeaturedProject 
                 type="Featured Project"
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
-                img={Project1}
-                link="/"
-                github="/"
+                title="Disney+ clone"
+                summary="A feature-rich Disney+ clone App using React, Sass, Redux, React Router and Firebase. 
+                It shows detail regarding some popular Movies. You can easily see the details."
+                img={FetProject1}
+                link="https://veracine-plus.web.app/"
+                github="https://github.com/SrVeraCruz/React.js-Disney_Plus-Firebase"
               />
             </div>
 
             <div className="col-span-6 sm:col-span-12">
               <Project 
-                type="Featured Project"
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
+                type="Project"
+                title="YouCine Movies"
                 img={Project1}
-                link="/"
-                github="/"
+                link="https://you-cine.vercel.app/"
+                github="https://github.com/SrVeraCruz/React.js-youCine"
               />
             </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project 
-                type="Featured Project"
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
-                img={Project1}
-                link="/"
-                github="/"
-              />
-            </div>
+            
           </div>
           
         </Layout>

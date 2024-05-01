@@ -54,35 +54,11 @@ export default function Experiences() {
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
             position={"Software Enginer"}
-            company={"Google"}
+            company={"Vera Curz"}
             companyLink={"https://www.google.com"}
-            time={"2024"} 
+            time={"2023"} 
             address={"Fès Maroc"}
-            work={"Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and  relevance of search results and developing new tools for data analysis and visualization."}
-          />
-          <Details
-            position={"Software Enginer"}
-            company={"Google"}
-            companyLink={"https://www.google.com"}
-            time={"2024"} 
-            address={"Fès Maroc"}
-            work={"Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and  relevance of search results and developing new tools for data analysis and visualization."}
-          />
-          <Details
-            position={"Software Enginer"}
-            company={"Google"}
-            companyLink={"https://www.google.com"}
-            time={"2024"} 
-            address={"Fès Maroc"}
-            work={"Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and  relevance of search results and developing new tools for data analysis and visualization."}
-          />
-          <Details
-            position={"Software Enginer"}
-            company={"Google"}
-            companyLink={"https://www.google.com"}
-            time={"2024"} 
-            address={"Fès Maroc"}
-            work={"Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and  relevance of search results and developing new tools for data analysis and visualization."}
+            work={"Working on your own in the development of new projects, offering tailored services to your clients. Its path is marked by innovation and independence, improving the accuracy and relevance of research results and developing new tools for data analysis and visualization."}
           />
         </ul>
 

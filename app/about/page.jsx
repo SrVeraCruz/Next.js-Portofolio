@@ -5,6 +5,7 @@ import Layout from '@/components/layout/Layout'
 import Head from 'next/head'
 import Image from 'next/image'
 import profilePic from '../../public/img/profile/developer-pic-2.jpg'
+import profilePic2 from '../../public/img/profile/hero1.jpg'
 import { useEffect, useRef } from 'react'
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import Skills from '@/components/skills/Skills'
@@ -69,11 +70,13 @@ export default function AboutPage(){
               </p>
             </div>
 
-            <CardBox className="col-span-3 h-max  p-8 xl:col-span-4 md:order-1 md:col-span-8">             
-              <Image src={profilePic} alt='Vera Cruz' priority
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                className='w-full h-auto'
-              />
+            <CardBox className="col-span-3 h-max  p-8 xl:col-span-4 md:order-1 md:col-span-8">     
+              <div className='bg-black'>
+                <Image src={profilePic2} alt='Vera Cruz' priority
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className='w-full h-auto'
+                />
+              </div>        
             </CardBox>
 
             <div 

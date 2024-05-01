@@ -93,36 +93,36 @@ const NavBar = () => {
         </nav>
 
         <nav className='flex items-center justify-center flex-wrap gap-4'>
-          <motion.a href={'https://twitter.com'} target='_blank' 
-            whileHover={{y:-2}} 
-            whileTap={{scale: 0.9}}
-          >
-            <TwitterIcon className={'!w-[1.5rem]'} />
-          </motion.a>
-          <motion.a href={'https://twitter.com'} target='_blank' 
-            whileHover={{y:-2}} 
-            whileTap={{scale: 0.9}}
-          >
-            <GithubIcon className={'!w-[1.5rem]'} />
-          </motion.a>
-          <motion.a href={'https://twitter.com'} target='_blank' 
-            whileHover={{y:-2}} 
-            whileTap={{scale: 0.9}}
-          >
-            <LinkedInIcon className={'!w-[1.5rem]'} />
-          </motion.a>
-          <motion.a href={'https://twitter.com'} target='_blank' 
-            whileHover={{y:-2}} 
-            whileTap={{scale: 0.9}}
-          >
-            <PinterestIcon className={'!w-[1.5rem] bg-light rounded-full'} />
-          </motion.a>
-          <motion.a href={'https://twitter.com'} target='_blank' 
-            whileHover={{y:-2}} 
-            whileTap={{scale: 0.9}}
-          >
-            <DribbbleIcon className={'!w-[1.5rem]'} />
-          </motion.a>
+        <motion.a href={'https://twitter.com'} target='_blank' 
+              whileHover={{y:-2}} 
+              whileTap={{scale: 0.9}}
+            >
+              <TwitterIcon className={'!w-[1.5rem]'} />
+            </motion.a>
+            <motion.a href={'https://github.com/SrVeraCruz'} target='_blank' 
+              whileHover={{y:-2}} 
+              whileTap={{scale: 0.9}}
+              >
+              <GithubIcon className={'!w-[1.5rem] dark:bg-dark bg-light text-dark dark:text-light rounded-full'} />
+            </motion.a>
+            <motion.a href={'https://www.linkedin.com/in/vera-cruz-d%C3%BAd%C3%BA-81854a279/'} target='_blank' 
+              whileHover={{y:-2}} 
+              whileTap={{scale: 0.9}}
+              >
+              <LinkedInIcon className={'!w-[1.5rem]'} />
+            </motion.a>
+            <motion.a href={'https://www.pinterest.com/'} target='_blank' 
+              whileHover={{y:-2}} 
+              whileTap={{scale: 0.9}}
+              >
+              <PinterestIcon className={'!w-[1.5rem] bg-light rounded-full'} />
+            </motion.a>
+            <motion.a href={'https://dribbble.com/'} target='_blank' 
+              whileHover={{y:-2}} 
+              whileTap={{scale: 0.9}}
+              >
+              <DribbbleIcon className={'!w-[1.5rem]'} />
+            </motion.a>
 
           <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")} 
@@ -157,25 +157,25 @@ const NavBar = () => {
             >
               <TwitterIcon className={'!w-[1.5rem]'} />
             </motion.a>
-            <motion.a href={'https://twitter.com'} target='_blank' 
+            <motion.a href={'https://github.com/SrVeraCruz'} target='_blank' 
               whileHover={{y:-2}} 
               whileTap={{scale: 0.9}}
               >
               <GithubIcon className={'!w-[1.5rem] dark:bg-dark bg-light text-dark dark:text-light rounded-full'} />
             </motion.a>
-            <motion.a href={'https://twitter.com'} target='_blank' 
+            <motion.a href={'https://www.linkedin.com/in/vera-cruz-d%C3%BAd%C3%BA-81854a279/'} target='_blank' 
               whileHover={{y:-2}} 
               whileTap={{scale: 0.9}}
               >
               <LinkedInIcon className={'!w-[1.5rem]'} />
             </motion.a>
-            <motion.a href={'https://twitter.com'} target='_blank' 
+            <motion.a href={'https://www.pinterest.com/'} target='_blank' 
               whileHover={{y:-2}} 
               whileTap={{scale: 0.9}}
               >
               <PinterestIcon className={'!w-[1.5rem] bg-light rounded-full'} />
             </motion.a>
-            <motion.a href={'https://twitter.com'} target='_blank' 
+            <motion.a href={'https://dribbble.com/'} target='_blank' 
               whileHover={{y:-2}} 
               whileTap={{scale: 0.9}}
               >
@@ -204,7 +204,7 @@ const NavBar = () => {
       
       {isOpen && (
         <motion.button 
-          className='absolute top-0 left-0 w-full h-screen z-20 bg-dark/55' 
+          className='fixed top-0 left-0 bottom-0 w-full h-full z-20 bg-dark/55' 
           initial={{opacity: 0}}
           animate={{opacity:1}}
           onClick={handleClick}
