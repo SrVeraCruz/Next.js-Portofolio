@@ -6,8 +6,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useRef } from 'react'
-import Article1 from "@/public/img/articles/pagination_component_in_reactjs.jpg"
-import Article2 from "@/public/img/articles/What_is_higher_order_component_in_React.jpg"
+//import Article1 from "@/public/img/articles/pagination_component_in_reactjs.jpg"
+//import Article2 from "@/public/img/articles/What_is_higher_order_component_in_React.jpg"
 import { motion, useMotionValue } from 'framer-motion'
 import CardBox from '@/components/cardBox/CardBox'
 import TransitionEffect from '@/components/transitionEffect/TransitionEffect'
