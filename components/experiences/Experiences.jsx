@@ -55,7 +55,7 @@ export default function Experiences() {
           <Details
             position={"Software Enginer"}
             company={"Vera Curz"}
-            companyLink={"https://www.google.com"}
+            companyLink={"#"}
             time={"2023"} 
             address={"Fès Maroc"}
             work={"Working on your own in the development of new projects, offering tailored services to your clients. Its path is marked by innovation and independence, improving the accuracy and relevance of research results and developing new tools for data analysis and visualization."}
