@@ -53,10 +53,10 @@ export default function Experiences() {
 
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
-            position={"Software Enginer"}
+            position={"Software Developer"}
             company={"Vera Curz"}
-            companyLink={"#"}
-            time={"2023"} 
+            companyLink={"https://github.com/SrVeraCruz"}
+            time={"2021"} 
             address={"Fès Maroc"}
             work={"Working on your own in the development of new projects, offering tailored services to your clients. Its path is marked by innovation and independence, improving the accuracy and relevance of research results and developing new tools for data analysis and visualization."}
           />

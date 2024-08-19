@@ -6,7 +6,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import profilePic from '../../public/img/profile/developer-pic-2.jpg'
 import profilePic2 from '../../public/img/profile/hero1.jpg'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useMemo } from 'react'
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import Skills from '@/components/skills/Skills'
 import Experiences from '@/components/experiences/Experiences'
@@ -42,6 +42,13 @@ const AnimetedNumbers = ({value}) => {
 }
 
 export default function AboutPage(){
+  const experienceTime = useMemo(() => {
+    const initialYear = new Date('2021-09-15').getFullYear();
+    const finalYear = new Date().getFullYear();
+
+    return Math.abs(finalYear - initialYear);
+  }, [])
+
   return (
     <>
       <Head>
@@ -60,7 +67,7 @@ export default function AboutPage(){
             >
               <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>Biography</h2>
               <p className='font-medium leading-7 xl:leading-6 tracking-wide xs:text-sm'>
-                Hi, I'm Vera Cruz, a web developer and UI/UX designer with a passion for creating beautiful, functional, and user-centered digital experiences. With  2 years of experience in the field. I am always looking for new and innovative ways to bring my clients' visions to life.
+                Hi, I'm Vera Cruz, a web developer and UI/UX designer with a passion for creating beautiful, functional, and user-centered digital experiences. With {experienceTime} years of experience in the field. I am always looking for new and innovative ways to bring my clients' visions to life.
               </p>
               <p className='font-medium leading-7 xl:leading-6 tracking-wide xs:text-sm'>
                 I believe that design is about more than just making things look pretty - it's about solving problems and creating intuitive, enjoyable experiences for users.
@@ -96,7 +103,7 @@ export default function AboutPage(){
               </div>
               <div className='flex flex-col items-end justify-center xl:items-center'>
                 <span className='inline-block text-7xl md:text-6xl sm:text-5xl xs:text-4xl font-bold'>
-                  <AnimetedNumbers value={2} />+
+                  <AnimetedNumbers value={experienceTime} />+
                 </span>
                 <h2 className='text-xl font-medium capitalize text-dark/75 md:text-center md:text-lg sm:text-base xs:text-sm dark:text-light/75'>years of experience</h2>
               </div>

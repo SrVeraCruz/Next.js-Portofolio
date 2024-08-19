@@ -57,7 +57,7 @@ export default function Education() {
           />
           <Details
             type={"TUD in Computer Engineering School"}
-            time={"2023-Present"}
+            time={"2022-Present"}
             place={"Higher School of Technologies-Fez "}
             info={"Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Data Base."} 
           />
