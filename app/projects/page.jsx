@@ -6,12 +6,18 @@ import Layout from "@/components/layout/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import FetProject1 from "@/public/img/projects/disney_plus.png"
-import Project1 from "@/public/img/projects/youCine.png"
 import Button from "@/components/button/Button";
 import { motion } from "framer-motion";
 import CardBox from "@/components/cardBox/CardBox";
 import TransitionEffect from "@/components/transitionEffect/TransitionEffect";
+
+import DisneyFeaturedThumb from "@/public/img/projects/disneyFeaturedThumb.png"
+import RealtimeChatThumb from "@/public/img/projects/realtimeChat.png"
+import TwitterXThumb from "@/public/img/projects/twitterX.png"
+import EcommerceAdminThumb from "@/public/img/projects/ecommerceAdmin.png"
+import EcommerceFontThumb from "@/public/img/projects/ecommerceFont.png"
+import EstFesAdminThumb from "@/public/img/projects/estFesAdmin.png"
+import EstFesFrontThumb from "@/public/img/projects/estFesFront.png"
 
 const FramerImage = motion(Image)
 
@@ -54,8 +60,8 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
 
 const Project = ({type, title, img, link, github}) => {
   return (
-    <article>
-      <CardBox className="flex-col justify-center p-6 shadow-2xl xs:p-4">
+    <article className="h-full">
+      <CardBox className="h-full flex-col justify-center p-6 shadow-2xl xs:p-4">
         <Link href={link} className="w-full cursor-pointer overflow-hidden rounded-lg">
           <FramerImage src={img} alt={title} 
             className="w-full h-auto" 
@@ -107,19 +113,76 @@ export default function Projects() {
                 title="Disney+ clone"
                 summary="A feature-rich Disney+ clone App using React, Sass, Redux, React Router and Firebase. 
                 It shows detail regarding some popular Movies. You can easily see the details."
-                img={FetProject1}
+                img={DisneyFeaturedThumb}
                 link="https://veracine-plus.web.app/"
                 github="https://github.com/SrVeraCruz/React.js-Disney_Plus-Firebase"
+              />
+            </div>
+
+            {/* <div className="col-span-6 sm:col-span-12">
+              <Project 
+                type="Project"
+                title="YouCine Movies"
+                img={YouCineThumb}
+                link="https://you-cine.vercel.app/"
+                github="https://github.com/SrVeraCruz/React.js-youCine"
+              />
+            </div> */}
+
+            <div className="col-span-6 sm:col-span-12">
+              <Project 
+                type="Project"
+                title="Real-Time Chat"
+                img={RealtimeChatThumb}
+                link="https://messenger-app-weld.vercel.app/"
+                github="https://github.com/SrVeraCruz/Next.js-Messenger_mongo-tailwind-prisma-Ts"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project 
+                type="Project"
+                title="Twitter X"
+                img={TwitterXThumb}
+                link="https://twitter-app-smoky.vercel.app/"
+                github="https://github.com/SrVeraCruz/Next.js-Twitter_mongo-tailwind"
               />
             </div>
 
             <div className="col-span-6 sm:col-span-12">
               <Project 
                 type="Project"
-                title="YouCine Movies"
-                img={Project1}
-                link="https://you-cine.vercel.app/"
-                github="https://github.com/SrVeraCruz/React.js-youCine"
+                title="E-Commerce Dashboard"
+                img={EcommerceAdminThumb}
+                link="https://next-js-ecommerce-admin-eight.vercel.app/"
+                github="https://github.com/SrVeraCruz/Next.js-ecommerce_admin"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project 
+                type="Project"
+                title="E-Commerce Client"
+                img={EcommerceFontThumb}
+                link="https://next-js-ecommerce-front.vercel.app/"
+                github="https://github.com/SrVeraCruz/Next.js-ecommerce_front"
+              />
+            </div>
+
+            <div className="col-span-6 sm:col-span-12">
+              <Project 
+                type="Project"
+                title="University website Dashboard"
+                img={EstFesAdminThumb}
+                link="https://admin-est-usmba-ac-ma.up.railway.app"
+                github="https://github.com/SrVeraCruz/PHP-Est_Fes_Admin"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project 
+                type="Project"
+                title="University website Student Side"
+                img={EstFesFrontThumb}
+                link="https://est-usmba-ac-ma.up.railway.app"
+                github="https://github.com/SrVeraCruz/PHP-Est_Fes-Front"
               />
             </div>
             
