@@ -11,7 +11,8 @@ import { motion } from "framer-motion";
 import CardBox from "@/components/cardBox/CardBox";
 import TransitionEffect from "@/components/transitionEffect/TransitionEffect";
 
-import DisneyFeaturedThumb from "@/public/img/projects/disneyFeaturedThumb.png"
+import FeaturedThumb from "@/public/img/projects/featuredThumb.png"
+import DisneyThumb from "@/public/img/projects/disneyThumb.png"
 import RealtimeChatThumb from "@/public/img/projects/realtimeChat.png"
 import TwitterXThumb from "@/public/img/projects/twitterX.png"
 import EcommerceAdminThumb from "@/public/img/projects/ecommerceAdmin.png"
@@ -110,12 +111,12 @@ export default function Projects() {
             <div className="col-span-12">
               <FeaturedProject 
                 type="Featured Project"
-                title="Disney+ clone"
-                summary="A feature-rich Disney+ clone App using React, Sass, Redux, React Router and Firebase. 
-                It shows detail regarding some popular Movies. You can easily see the details."
-                img={DisneyFeaturedThumb}
-                link="https://veracine-plus.web.app/"
-                github="https://github.com/SrVeraCruz/React.js-Disney_Plus-Firebase"
+                title="Portofolio"
+                summary="A feature-rich Modern Portofolio App using Next.js, Tailwind Css and Framer Motion. 
+                It shows everything you need to know about me."
+                img={FeaturedThumb}
+                link="/"
+                github="https://github.com/SrVeraCruz/Next.js-Portofolio"
               />
             </div>
 
