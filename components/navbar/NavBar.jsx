@@ -2,11 +2,14 @@
 
 import Link from 'next/link'
 import Logo from '../logo/Logo'
-import { usePathname, useRouter } from 'next/navigation'
+import { useParams, usePathname, useRouter } from 'next/navigation'
 import { DribbbleIcon, GithubIcon, LinkedInIcon, MoonIcon, PinterestIcon, SunIcon, TwitterIcon } from '../icons/Icons'
 import { motion } from 'framer-motion'
 import useThemeSwitcher from '../hooks/useThemeSwitcher'
 import { useEffect, useState } from 'react'
+import { useTranslations } from 'next-intl'
+import Translate from '../translate/Translate'
+
 
 const CustomLink = ({ href, title, className=""}) => {
   const path = usePathname();
@@ -54,6 +57,8 @@ const NavBar = () => {
   const [mode,setMode] = useThemeSwitcher()
   const [hasMouted, setHasMounted] = useState(false)
   const [isOpen,setIsOpen] = useState(false)
+  const t = useTranslations('Navbar');
+  const locale = useParams().locale
 
   const handleClick = () => {
     setIsOpen(!isOpen)
@@ -86,47 +91,54 @@ const NavBar = () => {
 
       <div className="w-full flex items-center justify-between lg:hidden">
         <nav className='flex gap-8 '>
-          <CustomLink href={'/'} title={'Home'} />
-          <CustomLink href={'/about'} title={'About'} />
-          <CustomLink href={'/projects'} title={'Projects'} />
-          <CustomLink href={'/articles'} title={'Articles'} />
+          <CustomLink href={`/${locale}`} title={t('home')} />
+          <CustomLink href={`/${locale}/about`} title={t('about')} />
+          <CustomLink href={`/${locale}/projects`} title={t('projects')} />
+          <CustomLink href={`/${locale}/articles`} title={t('articles')} />
         </nav>
 
         <nav className='flex items-center justify-center flex-wrap gap-4'>
-        <motion.a href={'https://twitter.com'} target='_blank' 
-              whileHover={{y:-2}} 
-              whileTap={{scale: 0.9}}
+          <motion.a href={'https://twitter.com'} target='_blank' 
+            whileHover={{y:-2}} 
+            whileTap={{scale: 0.9}}
+          >
+            <TwitterIcon className={'!w-[1.5rem]'} />
+          </motion.a>
+          <motion.a href={'https://github.com/SrVeraCruz'} target='_blank' 
+            whileHover={{y:-2}} 
+            whileTap={{scale: 0.9}}
             >
-              <TwitterIcon className={'!w-[1.5rem]'} />
-            </motion.a>
-            <motion.a href={'https://github.com/SrVeraCruz'} target='_blank' 
-              whileHover={{y:-2}} 
-              whileTap={{scale: 0.9}}
-              >
-              <GithubIcon className={'!w-[1.5rem] dark:bg-dark bg-light text-dark dark:text-light rounded-full'} />
-            </motion.a>
-            <motion.a href={'https://www.linkedin.com/in/vera-cruz-d%C3%BAd%C3%BA-81854a279/'} target='_blank' 
-              whileHover={{y:-2}} 
-              whileTap={{scale: 0.9}}
-              >
-              <LinkedInIcon className={'!w-[1.5rem]'} />
-            </motion.a>
-            <motion.a href={'https://www.pinterest.com/'} target='_blank' 
-              whileHover={{y:-2}} 
-              whileTap={{scale: 0.9}}
-              >
-              <PinterestIcon className={'!w-[1.5rem] bg-light rounded-full'} />
-            </motion.a>
-            <motion.a href={'https://dribbble.com/'} target='_blank' 
-              whileHover={{y:-2}} 
-              whileTap={{scale: 0.9}}
-              >
-              <DribbbleIcon className={'!w-[1.5rem]'} />
-            </motion.a>
+            <GithubIcon className={'!w-[1.5rem] dark:bg-dark bg-light text-dark dark:text-light rounded-full'} />
+          </motion.a>
+          <motion.a href={'https://www.linkedin.com/in/vera-cruz-d%C3%BAd%C3%BA-81854a279/'} target='_blank' 
+            whileHover={{y:-2}} 
+            whileTap={{scale: 0.9}}
+            >
+            <LinkedInIcon className={'!w-[1.5rem]'} />
+          </motion.a>
+          <motion.a href={'https://www.pinterest.com/'} target='_blank' 
+            whileHover={{y:-2}} 
+            whileTap={{scale: 0.9}}
+            >
+            <PinterestIcon className={'!w-[1.5rem] bg-light rounded-full'} />
+          </motion.a>
+          <motion.a href={'https://dribbble.com/'} target='_blank' 
+            whileHover={{y:-2}} 
+            whileTap={{scale: 0.9}}
+            className="mr-4"
+          >
+            <DribbbleIcon className={'!w-[1.5rem]'} />
+          </motion.a>
+
+          <Translate 
+            className="
+              !w-[1.5rem] dark:stroke-white stroke-dark 
+            "
+          />
 
           <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")} 
-            className="ml-3 flex items-center justify-center rounded-full bg-dark text-light dark:bg-light dark:text-dark p-1"
+            className="-ml-1 flex items-center justify-center rounded-full bg-dark text-light dark:bg-light dark:text-dark p-1"
           >
             {hasMouted && mode === "dark"
               ? <SunIcon className="fill-dark" />
@@ -144,10 +156,10 @@ const NavBar = () => {
           animate={{scale:1, opacity:1}}
         >
           <nav className='flex gap-4 flex-col items-center justify-center'>
-            <CustomMobileLink href={'/'} title={'Home'} toggle={handleClick} />
-            <CustomMobileLink href={'/about'} title={'About'} toggle={handleClick} />
-            <CustomMobileLink href={'/projects'} title={'Projects'} toggle={handleClick} />
-            <CustomMobileLink href={'/articles'} title={'Articles'} toggle={handleClick} />
+            <CustomMobileLink href={`/${locale}`} title={t('home')} toggle={handleClick} />
+            <CustomMobileLink href={`/${locale}/about`} title={t('about')} toggle={handleClick} />
+            <CustomMobileLink href={`/${locale}/projects`} title={t('projects')} toggle={handleClick} />
+            <CustomMobileLink href={`/${locale}/articles`} title={t('articles')} toggle={handleClick} />
           </nav>
 
           <nav className='flex items-center justify-center flex-wrap z-50 gap-4 sm:gap-2'>
@@ -178,13 +190,20 @@ const NavBar = () => {
             <motion.a href={'https://dribbble.com/'} target='_blank' 
               whileHover={{y:-2}} 
               whileTap={{scale: 0.9}}
+              className="mr-4"
               >
               <DribbbleIcon className={'!w-[1.5rem]'} />
             </motion.a>
 
+            <Translate 
+              className="
+                !w-[1.5rem] stroke-white dark:stroke-dark 
+              " 
+            />
+
             <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")} 
-              className="ml-3 flex items-center justify-center rounded-full bg-dark text-light dark:bg-light dark:text-dark p-1"
+              className="-ml-0.5 flex items-center justify-center rounded-full bg-dark text-light dark:bg-light dark:text-dark p-1"
               >
               {hasMouted && mode === "dark"
                 ? <SunIcon className="fill-dark" />
@@ -204,7 +223,7 @@ const NavBar = () => {
       
       {isOpen && (
         <motion.button 
-          className='fixed top-0 left-0 bottom-0 w-full h-full z-20 bg-dark/55' 
+          className='hidden fixed top-0 left-0 bottom-0 w-full h-full z-20 bg-dark/75 lg:block' 
           initial={{opacity: 0}}
           animate={{opacity:1}}
           onClick={handleClick}

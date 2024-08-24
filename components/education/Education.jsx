@@ -2,6 +2,7 @@ import { motion, useScroll } from "framer-motion"
 import { useRef } from "react"
 import LiIcon from "../liIcon/LiIcon"
 import ProgressBar from "../progressBar/ProgressBar"
+import { useTranslations } from "next-intl"
 
 const Details = ({type, time, place, info}) => {
   const ref = useRef(null)
@@ -32,6 +33,7 @@ const Details = ({type, time, place, info}) => {
 
 export default function Education() {
   const ref = useRef(null)
+  const t = useTranslations('About');
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -41,7 +43,7 @@ export default function Education() {
   return (
     <div className="mt-44 xl:mt-36 lg:mt-32 sm:mt-28">
       <h1 className="font-bold text-7xl md:text-6xl xs:text-4xl text-center mb-28 md:mb-20 sm:mb-16 w-full">
-        Education     
+      {t('educationTitle')}
       </h1>
 
       <div ref={ref} className="w-[75%] lg:w-[90%] md:w-full mx-auto relative">
@@ -50,16 +52,16 @@ export default function Education() {
 
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
-            type={"Bachelor Of Science And Technology"}
+            type={t('educationLabel1')}
             time={"2017-2020"}
-            place={"National High School-Sao Tome and Principe"}
-            info={"Completed course in advanced topics such as Reinforcement Learning, Computer Vision, and Machine Learning Engineering."} 
+            place={t('educationLocation1')}
+            info={t('educationDescription1')}
           />
           <Details
-            type={"TUD in Computer Engineering School"}
-            time={"2022-Present"}
-            place={"Higher School of Technologies-Fez "}
-            info={"Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Data Base."} 
+            type={t('educationLabel2')}
+            time={"2022-2025"}
+            place={t('educationLocation2')}
+            info={t('educationDescription2')}
           />
         </ul>
 

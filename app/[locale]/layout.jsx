@@ -1,20 +1,22 @@
-"use client"
-
-import { Montserrat } from "next/font/google";
 import "./globals.css";
-import NavBar from "../components/navbar/NavBar";
-import Footer from "../components/footer/Footer";
+import { Montserrat } from "next/font/google";
+import NavBar from "../../components/navbar/NavBar";
+import Footer from "../../components/footer/Footer";
 import Script from "next/script";
-import { usePathname } from "next/navigation";
 import Head from "next/head";
+import { getMessages } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
-export default function RootLayout({ children }) {
-  const path = usePathname()
+export default async function RootLayout({ 
+  children,
+  params: {locale}
+ }) {
+  const translations = await getMessages();
 
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
       <Head>
         <title>VeraCruz | Home</title>
         <meta name='description' content="Home Page Portofolio" />
@@ -31,9 +33,11 @@ export default function RootLayout({ children }) {
           }
         `}
         </Script>
-        <NavBar />
-        {children}
-        <Footer />
+        <NextIntlClientProvider messages={translations}>
+          <NavBar />
+          {children}
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

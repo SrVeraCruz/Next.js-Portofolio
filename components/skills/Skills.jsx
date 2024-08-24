@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import { useTranslations } from "next-intl";
 
 const Skill = ({name, x, y, className}) => {
   return (
@@ -16,9 +17,11 @@ const Skill = ({name, x, y, className}) => {
 }
 
 export default function Skills () {
+  const t = useTranslations('About');
+  
   return (
     <>
-      <h2 className="font-bold text-7xl mt-44 sm:mt-36 xs:mt-28 lg:mt-32 md:text-6xl xs:text-4xl w-full text-center">Skills</h2>
+      <h2 className="font-bold text-7xl mt-44 sm:mt-36 xs:mt-28 lg:mt-32 md:text-6xl xs:text-4xl w-full text-center">{t('skillsTitle')}</h2>
       <div 
         className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark lg:bg-circularLightLg lg:dark:bg-circularDarkLg md:bg-circularLightMd md:dark:bg-circularDarkMd sm:bg-circularLighSm sm:dark:bg-circularDarkSm lg:h-[80vh] sm:h-[60vh] xs:h-[50vh]"
       >

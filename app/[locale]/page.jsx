@@ -1,18 +1,21 @@
 'use client'
 
-import Layout from "../components/layout/Layout";
+import Layout from "../../components/layout/Layout";
 import Image from "next/image";
-import profilePic from '../public/img/profile/developer-pic-1.png'
-import lightBub from '../public/img/miscellaneous_icons_1.svg'
-import AnimetedText from "../components/animetedText/AnimetedText";
+import profilePic from '../../public/img/profile/developer-pic-1.png'
+import lightBub from '../../public/img/miscellaneous_icons_1.svg'
+import AnimetedText from "../../components/animetedText/AnimetedText";
 import Link from "next/link";
-import { LinkArrow } from "../components/icons/Icons";
+import { LinkArrow } from "../../components/icons/Icons";
 import HireMe from "@/components/hireMe/HireMe";
 import Head from "next/head";
 import Button from "@/components/button/Button";
 import TransitionEffect from "@/components/transitionEffect/TransitionEffect";
+import { useTranslations } from "next-intl";
 
 export default function Home() {
+  const t = useTranslations('Home');
+  
   return (
     <>
       <Head>
@@ -35,25 +38,23 @@ export default function Home() {
                 className="w-1/2 flex flex-col items-center self-center lg:w-full lg:!text-center"
               >
               <AnimetedText 
-                text={"Turning Vision Into Reality With Code And Design."} 
+                text={t('title')} 
                 className={'!text-6xl !text-left xl:!text-5xl lg:!text-6xl md:!text-5xl sm:!text-4xl xs:!text-3xl lg:!text-center'} 
               />
               <p className="py-4 text-base font-medium md:text-sm xs:text-xs">
-                As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. 
-                Explore my latest projects and articles, showcasing my expertise in 
-                React.js and web development.
+                {t('description')}
               </p>
               <div className="flex items-center self-start mt-2 gap-4 lg:self-center">
                 <Button>
                   <Link href="/resume/CV-Resume.pdf" target="_blank " download={true}>
-                    Resume 
+                    {t('resumeBtn')} 
                   </Link>
                   <LinkArrow className={'w-6'} />
                 </Button>
                 <Link href="mailto:veracruzdudu@gmail.com" target="_blank"
                   className="font-medium text-lg underline text-dark dark:text-light md:text-base"
                   >
-                  Contact
+                  {t('contactBtn')} 
                 </Link>
               </div>
             </div>

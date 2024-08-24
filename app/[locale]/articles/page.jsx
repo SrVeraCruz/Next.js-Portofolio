@@ -11,6 +11,7 @@ import React, { useRef } from 'react'
 import { motion, useMotionValue } from 'framer-motion'
 import CardBox from '@/components/cardBox/CardBox'
 import TransitionEffect from '@/components/transitionEffect/TransitionEffect'
+import { useTranslations } from 'next-intl'
 
 const FramerImage = motion(Image)
 
@@ -65,6 +66,7 @@ const MovingImg = ({img, title, link}) => {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const imgRef = useRef(null)
+  const t = useTranslations('Articles');
 
   const handleMouse = (e) => {
     imgRef.current.style.display = "inline-block"
@@ -99,7 +101,7 @@ const MovingImg = ({img, title, link}) => {
         whileInView={{opacity: 1, transition: {duration: 0.2}}}
         className='w-96 min-h-48 hidden absolute z-10 rounded-lg bg-dark/75 dark:bg-light/75 text-light dark:text-dark md:!hidden' 
       > 
-        <h2 className='font-semibold text-2xl absolute top-[50%] bottom-[50%] left-[50%] -translate-x-16 '>Article here</h2>
+        <h2 className='font-semibold text-2xl absolute top-[50%] bottom-[50%] left-[50%] -translate-x-16 '>{t('articlePlaceholder')}</h2>
       </motion.div>
       
     </Link>
@@ -125,6 +127,8 @@ const Article = ({img, title, date, link}) => {
 }
 
 export default function Articles() {
+  const t = useTranslations('Articles');
+
   return (
     <>
       <Head>
@@ -134,7 +138,7 @@ export default function Articles() {
       <TransitionEffect />
       <main className='w-full flex flex-col items-center justify-center overflow-hidden'>
         <Layout className='pt-8'>
-          <AnimetedText text="Words Can Change The World! " className={"mb-16 text-7xl"} />
+          <AnimetedText text={t('title')} className={"mb-16 text-7xl"} />
           <ul className='grid grid-cols-2 gap-16 md:grid-cols-1 lg:gap-8 md:gap-y-16'>
             {/* <FeaturedArticle 
               img={Article1}
@@ -147,21 +151,21 @@ export default function Articles() {
 
             <FeaturedArticle 
               img={""}
-              title="Soon... come back later"
-              time="time to read..."
-              summary="description. description. description. description. description. description. description. description. description."
+              title={t('featuredTitle')}
+              time={t('featuredTimeToRead')}
+              summary={t('featuredDescription')}
               link={'#'}
             />
             <FeaturedArticle 
               img={""}
-              title="Soon... come back later"
-              time="time to read..."
-              summary="description. description. description. description. description. description. description. description. description."
+              title={t('featuredTitle')}
+              time={t('featuredTimeToRead')}
+              summary={t('featuredDescription')}
               link={'#'}
             />
           </ul>
 
-          <h2 className='font-bold text-4xl text-center w-full my-16 mt-32 md:my-10 md:mt-24'>All Articles</h2>
+          <h2 className='font-bold text-4xl text-center w-full my-16 mt-32 md:my-10 md:mt-24'>{t('articlesLabel')}</h2>
           <ul>
             {/* <Article 
               img={Article2}
@@ -178,14 +182,14 @@ export default function Articles() {
 
             <Article 
               img={""}
-              title="Soon ... come back later"
-              date="Month Day, Year"
+              title={t('articleTitle')}
+              date={t('articleDate')}
               link="#"
             />
             <Article 
               img={""}
-              title="Soon ... come back later"
-              date="Month Day, Year"
+              title={t('articleTitle')}
+              date={t('articleDate')}
               link="#"
             />
 

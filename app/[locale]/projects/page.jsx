@@ -19,10 +19,13 @@ import EcommerceAdminThumb from "@/public/img/projects/ecommerceAdmin.png"
 import EcommerceFontThumb from "@/public/img/projects/ecommerceFont.png"
 import EstFesAdminThumb from "@/public/img/projects/estFesAdmin.png"
 import EstFesFrontThumb from "@/public/img/projects/estFesFront.png"
+import { useTranslations } from "next-intl";
 
 const FramerImage = motion(Image)
 
 const FeaturedProject = ({type, title, summary, img, link, github}) => {
+  const t = useTranslations('Projects');
+  
   return (
     <article>
       <CardBox 
@@ -50,7 +53,7 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
               <GithubIcon />
             </Link>
             <Button>
-              <Link href={link} target="_blank" >Visit Project</Link>
+              <Link href={link} target="_blank" >{t('featuredVisitBtn')}</Link>
             </Button>
           </div>
         </div>
@@ -60,6 +63,8 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
 }
 
 const Project = ({type, title, img, link, github}) => {
+  const t = useTranslations('Projects');
+
   return (
     <article className="h-full">
       <CardBox className="h-full flex-col justify-center p-6 shadow-2xl xs:p-4">
@@ -80,8 +85,9 @@ const Project = ({type, title, img, link, github}) => {
             <h2 className="my-2 w-full text-left text-3xl font-bold sm:text-2xl">{title}</h2>
           </Link>
           <div className="w-full mt-2 flex gap-4 items-center justify-between">
-            <Link href={link} target="_blank" className="font-semibold text-lg underline md:text-base">
-              Visit
+            <Link href={link} target="_blank" className="font-semibold text-lg underline md:text-base"
+            >
+              {t('projectVisitBtn')}
             </Link>
             <Link href={github} target="_blank" className="w-8 md:w-6" >
               <GithubIcon />
@@ -95,6 +101,8 @@ const Project = ({type, title, img, link, github}) => {
 }
 
 export default function Projects() {
+  const t = useTranslations('Projects');
+
   return (
     <>
       <Head>
@@ -104,16 +112,15 @@ export default function Projects() {
       <TransitionEffect />
       <main className="w-full mb-16 xs:mb-8 flex flex-col items-center justify-center">
         <Layout className="pt-8">
-          <AnimetedText text={"Imagination  Trumps Knowledge!"} className="mb-8" />
+          <AnimetedText text={t('title')}  className="mb-8" />
 
           <div className="grid grid-cols-12 gap-24 gap-y-28 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-y-20 sm:gap-x-0">
 
             <div className="col-span-12">
               <FeaturedProject 
-                type="Featured Project"
-                title="Portofolio"
-                summary="A feature-rich Modern Portofolio App using Next.js, Tailwind Css and Framer Motion. 
-                It shows everything you need to know about me."
+                type={t('featuredLabel')}
+                title={t('featuredTitle')}
+                summary={t('featuredDescription')}
                 img={FeaturedThumb}
                 link="/"
                 github="https://github.com/SrVeraCruz/Next.js-Portofolio"
@@ -132,8 +139,8 @@ export default function Projects() {
 
             <div className="col-span-6 sm:col-span-12">
               <Project 
-                type="Project"
-                title="Real-Time Chat"
+                type={t('projectLabel')}
+                title={t('projectTitle1')}
                 img={RealtimeChatThumb}
                 link="https://messenger-app-weld.vercel.app/"
                 github="https://github.com/SrVeraCruz/Next.js-Messenger_mongo-tailwind-prisma-Ts"
@@ -141,8 +148,8 @@ export default function Projects() {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project 
-                type="Project"
-                title="Twitter X"
+                type={t('projectLabel')}
+                title={t('projectTitle2')}
                 img={TwitterXThumb}
                 link="https://twitter-app-smoky.vercel.app/"
                 github="https://github.com/SrVeraCruz/Next.js-Twitter_mongo-tailwind"
@@ -151,8 +158,8 @@ export default function Projects() {
 
             <div className="col-span-6 sm:col-span-12">
               <Project 
-                type="Project"
-                title="E-Commerce Dashboard"
+                type={t('projectLabel')}
+                title={t('projectTitle3')}
                 img={EcommerceAdminThumb}
                 link="https://next-js-ecommerce-admin-eight.vercel.app/"
                 github="https://github.com/SrVeraCruz/Next.js-ecommerce_admin"
@@ -160,8 +167,8 @@ export default function Projects() {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project 
-                type="Project"
-                title="E-Commerce Client"
+                type={t('projectLabel')}
+                title={t('projectTitle4')}
                 img={EcommerceFontThumb}
                 link="https://next-js-ecommerce-front.vercel.app/"
                 github="https://github.com/SrVeraCruz/Next.js-ecommerce_front"
@@ -170,8 +177,8 @@ export default function Projects() {
 
             <div className="col-span-6 sm:col-span-12">
               <Project 
-                type="Project"
-                title="University website Dashboard"
+                type={t('projectLabel')}
+                title={t('projectTitle5')}
                 img={EstFesAdminThumb}
                 link="https://admin-est-usmba-ac-ma.up.railway.app"
                 github="https://github.com/SrVeraCruz/PHP-Est_Fes_Admin"
@@ -179,8 +186,8 @@ export default function Projects() {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project 
-                type="Project"
-                title="University website Student Side"
+                type={t('projectLabel')}
+                title={t('projectTitle6')}
                 img={EstFesFrontThumb}
                 link="https://est-usmba-ac-ma.up.railway.app"
                 github="https://github.com/SrVeraCruz/PHP-Est_Fes-Front"

@@ -2,6 +2,7 @@ import { motion, useScroll } from "framer-motion"
 import { useRef } from "react"
 import LiIcon from "../liIcon/LiIcon"
 import ProgressBar from "../progressBar/ProgressBar"
+import { useTranslations } from "next-intl"
 
 const Details = ({position, company, companyLink, time, address, work}) => {
   const ref = useRef(null)
@@ -35,6 +36,7 @@ const Details = ({position, company, companyLink, time, address, work}) => {
 
 export default function Experiences() {
   const ref = useRef(null)
+  const t = useTranslations('About');
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -44,7 +46,7 @@ export default function Experiences() {
   return (
     <div className="mt-44 xl:mt-36 lg:mt-32 md:mt-24">
       <h1 className="font-bold text-7xl md:text-6xl xs:text-4xl text-center mb-28 md:mb-20 sm:mb-16 w-full">
-        Experiences     
+      {t('experiencesTitle')}     
       </h1>
 
       <div ref={ref} className="w-[75%] lg:w-[90%] md:w-full mx-auto relative">
@@ -53,12 +55,12 @@ export default function Experiences() {
 
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
-            position={"Software Developer"}
+            position={t('experienceLabel1')}
             company={"Vera Curz"}
             companyLink={"https://github.com/SrVeraCruz"}
             time={"2021"} 
-            address={"Fès Maroc"}
-            work={"Working on your own in the development of new projects, offering tailored services to your clients. Its path is marked by innovation and independence, improving the accuracy and relevance of research results and developing new tools for data analysis and visualization."}
+            address={t('experienceLocation1')}
+            work={t('experienceDescription1')}
           />
         </ul>
 

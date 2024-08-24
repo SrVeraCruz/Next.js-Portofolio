@@ -1,0 +1,69 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "articles": "Articles"
+  },
+  "Home": {
+    "title": "Turning Vision Into Reality With Code And Design.",
+    "description": "As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in React.js and web development.",
+    "resumeBtn": "Resume",
+    "contactBtn": "Contact",
+    "hireme": "Hire me"
+  },
+  "About": {
+    "title": "Passion Fuels Purpose!",
+    "biographyTitle": "Biography",
+    "biographyParagraph1_1": "Hi, I'm Vera Cruz, a web developer and UI/UX designer focused on creating beautiful, functional, and user-centric digital experiences. With",
+    "biographyParagraph1_2": "years of experience in the field, I'm always looking for innovative ways to bring my clients' visions to life.",
+    "biographyParagraph2": "I believe design is more than just making things look pretty - it's about solving problems and creating intuitive, delightful experiences for users.",
+    "biographyParagraph3": "Whether I'm working on a website, mobile app, or other digital product, I bring my commitment to design excellence and user-centric thinking to every project I work on. I look forward to the opportunity to bring my skills to your next project.",
+    "feedbacks": "Positive Feedbacks",
+    "projects": "Projects Completed",
+    "experience": "Years Of Experience",
+    "skillsTitle": "Skills",
+    "experiencesTitle": "Experiences",
+    "experienceLabel1": "Software Developer",
+    "experienceLocation1": "Fès-Maroc",
+    "experienceDescription1": "Working independently on the development of new projects, offering personalized services to my clients. My trajectory is marked by innovation and independence, improving the accuracy and relevance of research results and developing new tools for data analysis and visualization.",
+    "educationTitle": "Education",
+    "educationLabel1": "Bachelor Of Science And Technology",
+    "educationLocation1": "National High School-Sao Tome and Principe",
+    "educationDescription1": "Completed course in advanced topics such as Reinforcement Learning, Computer Vision, and Machine Learning Engineering.",
+    "educationLabel2": "TUD in Computer Engineering",
+    "educationLocation2": "Higher School of Technologies-Fez",
+    "educationDescription2": "Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Data Base."
+  },
+  "Projects": {
+    "title": "Imagination  Trumps Knowledge!",
+    "featuredLabel": "Featured Project",
+    "featuredTitle": "Portofolio",
+    "featuredDescription": "A feature-rich Modern Portofolio App using Next.js, Tailwind Css and Framer Motion. It shows everything you need to know about me.",
+    "featuredVisitBtn": "Visit Project",
+    "projectLabel": "Project",
+    "projectVisitBtn": "Visit",
+    "projectTitle1": "Real-Time Chat",
+    "projectTitle2": "Twitter X",
+    "projectTitle3": "E-Commerce Dashboard",
+    "projectTitle4": "E-Commerce Client",
+    "projectTitle5": "University website Dashboard",
+    "projectTitle6": "University website Student Side"
+  },
+  "Articles": {
+    "title": "Words Can Change The World!",
+    "featuredTitle": "Soon... come back later",
+    "featuredDescription": "soon. soon. soon. soon. soon. soon. soon. soon. soon.",
+    "featuredTimeToRead": "time to read...",
+    "articlesLabel": "All Articles",
+    "articleTitle": "Soon ... come back later",
+    "articlePlaceholder": "Article",
+    "articleDate": "Month Day, Year"
+  },
+  "Footer": {
+    "copyright": "All Rights Reserved.",
+    "madeWith": "Built With",
+    "by": "by",
+    "greeting": "Say Hello"
+  }
+}

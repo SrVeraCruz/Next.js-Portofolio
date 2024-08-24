@@ -1,0 +1,69 @@
+{
+  "Navbar": {
+    "home": "Inicio",
+    "about": "Sobre",
+    "projects": "Projetos",
+    "articles": "Artigos"
+  },
+  "Home": {
+    "title": "Transformando visão em realidade com código e design.",
+    "description": "Como um desenvolvedor full-stack habilidoso, dedico-me a transformar ideias em aplicativos web inovadores. Explore meus últimos projetos e artigos, mostrando minha expertise em React.js e desenvolvimento web.",
+    "resumeBtn": "Resumo",
+    "contactBtn": "Contacto",
+    "hireme": "Me contrate"
+  },
+  "About": {
+    "title": "A paixão alimenta o propósito!",
+    "biographyTitle": "Biografia",
+    "biographyParagraph1_1": "Olá, sou Vera Cruz, um desenvolvedor web e designer de UI/UX focado em criar experiências digitais bonitas, funcionais e centradas no usuário. Com",
+    "biographyParagraph1_2": "anos de experiência na área. Estou sempre procurando maneiras inovadoras de dar vida às visões dos meus clientes.",
+    "biographyParagraph2": " \nAcredito que design é mais do que apenas fazer as coisas parecerem bonitas - é sobre resolver problemas e criar experiências intuitivas e agradáveis para os usuários.",
+    "biographyParagraph3": "Seja trabalhando em um site, aplicativo móvel ou outro produto digital, trago meu comprometimento com a excelência em design e o pensamento centrado no usuário para cada projeto em que trabalho. Estou ansioso pela oportunidade de levar minhas habilidades para o seu próximo projeto.",
+    "feedbacks": "Feedbacks Positivos",
+    "projects": "Projetos Concluídos",
+    "experience": "Anos de experiências",
+    "skillsTitle": "Habilidades",
+    "experiencesTitle": "Experiências",
+    "experienceLabel1": "Desenvolvedor de software",
+    "experienceLocation1": "Fès-Marrocos",
+    "experienceDescription1": "Trabalhando por conta própria no desenvolvimento de novos projetos, oferecendo serviços personalizados aos meus clientes. Minha trajetória é marcada pela inovação e independência, melhorando a precisão e relevância dos resultados de pesquisa e desenvolvendo novas ferramentas para análise e visualização de dados.",
+    "educationTitle": "Educação",
+    "educationLabel1": "Bacharelado em Ciência e Tecnologia",
+    "educationLocation1": "Liceu Nacional-São Tomé e Príncipe",
+    "educationDescription1": "Curso concluído em tópicos avançados, como Aprendizagem por Reforço, Visão Computacional e Engenharia de Aprendizagem de Maquinas.",
+    "educationLabel2": "DUT em Engenharia de computação",
+    "educationLocation2": "Escola Superior de Tecnologia - Fez",
+    "educationDescription2": "Os cursos relevantes incluíram Estruturas de Dados e Algoritmos, Engenharia de Sistemas Informáticos e Base de Dados."
+  },
+  "Projects": {
+    "title": "A imaginação supera o conhecimento!",
+    "featuredLabel": "Projeto em destaque",
+    "featuredTitle": "Portofolio",
+    "featuredDescription": "Uma aplicação moderna e rica em funcionalidades que usa Next.js, Tailwind Css e Framer Motion. Mostra tudo o que precisa de saber sobre mim.",
+    "featuredVisitBtn": "Visitar Projeto",
+    "projectLabel": "Projeto",
+    "projectVisitBtn": "Visitar",
+    "projectTitle1": "Chat em tempo real",
+    "projectTitle2": "Twitter X",
+    "projectTitle3": "E-Commerce Admin",
+    "projectTitle4": "E-Commerce Cliente",
+    "projectTitle5": "Site Web Universitario Admin",
+    "projectTitle6": "Site Web Universitario Lado Estudante"
+  },
+  "Articles": {
+    "title": "Palavras podem mudar o mundo! ",
+    "featuredTitle": "Em breve... volte mais tarde",
+    "featuredDescription": "brevemente. brevemente. brevemente. brevemente. brevemente. brevemente. brevemente. brevemente. brevemente.",
+    "featuredTimeToRead": "tempo de leitura...",
+    "articlesLabel": "Todos Artigos",
+    "articleTitle": "Em breve... volte mais tarde",
+    "articlePlaceholder": "Artigo",
+    "articleDate": "Mês Dia, Ano"
+  },
+  "Footer": {
+    "copyright": "Todos os Direitos Reservados.",
+    "madeWith": "Feito com",
+    "by": "por",
+    "greeting": "Diga Oi"
+  }
+}
