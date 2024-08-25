@@ -5,9 +5,14 @@
     "projects": "Projetos",
     "articles": "Artigos"
   },
+  "Languages": {
+    "english": "Inglês",
+    "french": "Françês",
+    "portuguese": "Portugues"
+  },
   "Home": {
     "title": "Transformando visão em realidade com código e design.",
-    "description": "Como um desenvolvedor full-stack habilidoso, dedico-me a transformar ideias em aplicativos web inovadores. Explore meus últimos projetos e artigos, mostrando minha expertise em React.js e desenvolvimento web.",
+    "description": "Como um desenvolvedor full-stack habilidoso, dedico-me a transformar ideias em aplicativos web originais. Explore meus últimos projetos e artigos, mostrando minha expertise em React.js e desenvolvimento web.",
     "resumeBtn": "Resumo",
     "contactBtn": "Contacto",
     "hireme": "Me contrate"
@@ -16,8 +21,8 @@
     "title": "A paixão alimenta o propósito!",
     "biographyTitle": "Biografia",
     "biographyParagraph1_1": "Olá, sou Vera Cruz, um desenvolvedor web e designer de UI/UX focado em criar experiências digitais bonitas, funcionais e centradas no usuário. Com",
-    "biographyParagraph1_2": "anos de experiência na área. Estou sempre procurando maneiras inovadoras de dar vida às visões dos meus clientes.",
-    "biographyParagraph2": " \nAcredito que design é mais do que apenas fazer as coisas parecerem bonitas - é sobre resolver problemas e criar experiências intuitivas e agradáveis para os usuários.",
+    "biographyParagraph1_2": "anos de experiência na área. Estou sempre procurando maneiras originais de dar vida às visões dos meus clientes.",
+    "biographyParagraph2": "Acredito que design é mais do que apenas fazer as coisas parecerem bonitas - é sobre resolver problemas e criar experiências intuitivas e agradáveis para os usuários.",
     "biographyParagraph3": "Seja trabalhando em um site, aplicativo móvel ou outro produto digital, trago meu comprometimento com a excelência em design e o pensamento centrado no usuário para cada projeto em que trabalho. Estou ansioso pela oportunidade de levar minhas habilidades para o seu próximo projeto.",
     "feedbacks": "Feedbacks Positivos",
     "projects": "Projetos Concluídos",
@@ -28,8 +33,8 @@
     "experienceLocation1": "Fès-Marrocos",
     "experienceDescription1": "Trabalhando por conta própria no desenvolvimento de novos projetos, oferecendo serviços personalizados aos meus clientes. Minha trajetória é marcada pela inovação e independência, melhorando a precisão e relevância dos resultados de pesquisa e desenvolvendo novas ferramentas para análise e visualização de dados.",
     "educationTitle": "Educação",
-    "educationLabel1": "Bacharelado em Ciência e Tecnologia",
-    "educationLocation1": "Liceu Nacional-São Tomé e Príncipe",
+    "educationLabel1": "Bacharelado em Ciências e Tecnologias",
+    "educationLocation1": "Liceu Nacional - São Tomé e Príncipe",
     "educationDescription1": "Curso concluído em tópicos avançados, como Aprendizagem por Reforço, Visão Computacional e Engenharia de Aprendizagem de Maquinas.",
     "educationLabel2": "DUT em Engenharia de computação",
     "educationLocation2": "Escola Superior de Tecnologia - Fez",
@@ -45,13 +50,13 @@
     "projectVisitBtn": "Visitar",
     "projectTitle1": "Chat em tempo real",
     "projectTitle2": "Twitter X",
-    "projectTitle3": "E-Commerce Admin",
-    "projectTitle4": "E-Commerce Cliente",
-    "projectTitle5": "Site Web Universitario Admin",
-    "projectTitle6": "Site Web Universitario Lado Estudante"
+    "projectTitle3": "Loja Virtual Admin",
+    "projectTitle4": "Loja Virtual Cliente",
+    "projectTitle5": "Plataforma Universitaria Admin",
+    "projectTitle6": "Plataforma Universitaria Lado Estudante"
   },
   "Articles": {
-    "title": "Palavras podem mudar o mundo! ",
+    "title": "Palavras podem mudar o mundo!",
     "featuredTitle": "Em breve... volte mais tarde",
     "featuredDescription": "brevemente. brevemente. brevemente. brevemente. brevemente. brevemente. brevemente. brevemente. brevemente.",
     "featuredTimeToRead": "tempo de leitura...",

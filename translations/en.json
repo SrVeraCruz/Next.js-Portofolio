@@ -5,9 +5,14 @@
     "projects": "Projects",
     "articles": "Articles"
   },
+  "Languages": {
+    "english": "English",
+    "french": "French",
+    "portuguese": "Portuguese"
+  },
   "Home": {
     "title": "Turning Vision Into Reality With Code And Design.",
-    "description": "As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in React.js and web development.",
+    "description": "As a skilled full-stack developer, I am dedicated to turning ideas into original web applications. Explore my latest projects and articles, showcasing my expertise in React.js and web development.",
     "resumeBtn": "Resume",
     "contactBtn": "Contact",
     "hireme": "Hire me"
@@ -16,7 +21,7 @@
     "title": "Passion Fuels Purpose!",
     "biographyTitle": "Biography",
     "biographyParagraph1_1": "Hi, I'm Vera Cruz, a web developer and UI/UX designer focused on creating beautiful, functional, and user-centric digital experiences. With",
-    "biographyParagraph1_2": "years of experience in the field, I'm always looking for innovative ways to bring my clients' visions to life.",
+    "biographyParagraph1_2": "years of experience in the field, I'm always looking for original ways to bring my clients' visions to life.",
     "biographyParagraph2": "I believe design is more than just making things look pretty - it's about solving problems and creating intuitive, delightful experiences for users.",
     "biographyParagraph3": "Whether I'm working on a website, mobile app, or other digital product, I bring my commitment to design excellence and user-centric thinking to every project I work on. I look forward to the opportunity to bring my skills to your next project.",
     "feedbacks": "Positive Feedbacks",
@@ -29,7 +34,7 @@
     "experienceDescription1": "Working independently on the development of new projects, offering personalized services to my clients. My trajectory is marked by innovation and independence, improving the accuracy and relevance of research results and developing new tools for data analysis and visualization.",
     "educationTitle": "Education",
     "educationLabel1": "Bachelor Of Science And Technology",
-    "educationLocation1": "National High School-Sao Tome and Principe",
+    "educationLocation1": "National High School - Sao Tome and Principe",
     "educationDescription1": "Completed course in advanced topics such as Reinforcement Learning, Computer Vision, and Machine Learning Engineering.",
     "educationLabel2": "TUD in Computer Engineering",
     "educationLocation2": "Higher School of Technologies-Fez",

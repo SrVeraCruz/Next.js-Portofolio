@@ -1,0 +1,74 @@
+{
+  "Navbar": {
+    "home": "Principal",
+    "about": "À propos",
+    "projects": "Projets",
+    "articles": "Articles"
+  },
+  "Languages": {
+    "english": "Anglais",
+    "french": "Français",
+    "portuguese": "Portugais"
+  },
+  "Home": {
+    "title": "Transformer la vision en réalité grâce au code et à la conception.",
+    "description": "En tant que développeur full-stack compétent, je me suis engagé à transformer les idées en applications web originales. Découvrez mes derniers projets et articles, qui mettent en avant mon expertise en React.js et en développement web.",
+    "resumeBtn": "Résumé",
+    "contactBtn": "Contact",
+    "hireme": "Recruter moi"
+  },
+  "About": {
+    "title": "La passion alimente l'objectif!",
+    "biographyTitle": "Biographie",
+    "biographyParagraph1_1": "Bonjour, je suis Vera Cruz Dúdú, développeur web et designer UI/UX axé sur la création d'expériences numériques belles, fonctionnelles et centrées sur l'utilisateur. Avec",
+    "biographyParagraph1_2": "années d'expérience dans le domaine. Je suis toujours à la recherche de moyens originaux pour donner vie à la vision de mes clients.",
+    "biographyParagraph2": "Je pense que la conception ne se limite pas à rendre les choses jolies - il s'agit de résoudre des problèmes et de créer des expériences intuitives et agréables pour les utilisateurs.",
+    "biographyParagraph3": "Que ce soit pour un site web, une application mobile ou un autre produit virtuel, j'apporte mon engagement à l'excellence du design et à la réflexion centrée sur l'utilisateur à chaque projet sur lequel je travaille. J'attends avec enthousiasme l'occasion de mettre mes compétences au service de votre prochain projet.",
+    "feedbacks": "Feedbacks Positifs",
+    "projects": "Projets Terminés",
+    "experience": "Années D'expérience",
+    "skillsTitle": "Compétences",
+    "experiencesTitle": "Expériences",
+    "experienceLabel1": "Développeur de logiciels",
+    "experienceLocation1": "Fès-Maroc",
+    "experienceDescription1": "Je travaille de manière autonome pour développer de nouveaux projets, offrant des services personnalisés à mes clients. Ma carrière a été marquée par l'innovation et l'indépendance, l'amélioration de la précision et de la pertinence des résultats de recherche et le développement de nouveaux outils d'analyse et de visualisation des données.",
+    "educationTitle": "Education",
+    "educationLabel1": "Baccalauréat en Sciences et Technologies",
+    "educationLocation1": "Lycée National - São Tomé et Príncipe",
+    "educationDescription1": "A suivi des cours sur des sujets avancés tels que l'apprentissage par renforcement, la vision computationnelle et l'ingénierie de l'apprentissage des machines.",
+    "educationLabel2": "DUT en Génie Informatique",
+    "educationLocation2": "École Superior de Technologie - Fez",
+    "educationDescription2": "Les cours importants incluaient les Structures de Données et les Algorithmes, l'Ingénierie des Systèmes Informatiques et les Bases de Données."
+  },
+  "Projects": {
+    "title": "L'imagination dépasse la connaissance!",
+    "featuredLabel": "Projet en vedette",
+    "featuredTitle": "Portefeuille",
+    "featuredDescription": "Une application moderne et riche en fonctionnalités qui utilise Next.js, Tailwind Css et Framer Motion. Elle vous montre tout ce que vous devez savoir sur moi.",
+    "featuredVisitBtn": "Visiter le projet",
+    "projectLabel": "Projet",
+    "projectVisitBtn": "Visiter",
+    "projectTitle1": "Chat en temps réel",
+    "projectTitle2": "Twitter X",
+    "projectTitle3": "Shop en ligne Admin",
+    "projectTitle4": "Shop en ligne Client",
+    "projectTitle5": "Plateforme Universitaire Admin",
+    "projectTitle6": "Plateforme Universitaire Côté Élèves"
+  },
+  "Articles": {
+    "title": "Les mots peuvent changer le monde !",
+    "featuredTitle": "Bientôt... revenez plus tard",
+    "featuredDescription": "bientôt. bientôt. bientôt. bientôt. bientôt. bientôt. bientôt. bientôt. bientôt. bientôt. bientôt.",
+    "featuredTimeToRead": "temps de lecture...",
+    "articlesLabel": "Tous les articles",
+    "articleTitle": "Bientôt... revenez plus tard",
+    "articlePlaceholder": "Article",
+    "articleDate": "Mois Jour, Année"
+  },
+  "Footer": {
+    "copyright": "Tous Les Droits Sont Réservés.",
+    "madeWith": "Créé avec",
+    "by": "par",
+    "greeting": "Saluer"
+  }
+}

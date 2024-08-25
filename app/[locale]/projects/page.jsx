@@ -31,7 +31,7 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
       <CardBox 
         className="rounded-3xl rounded-br-2xl flex items-center p-12 lg:flex-col lg:p-8 gap-6"
       >
-        <Link href={link} className="w-1/2 lg:w-full xs:rounded-2xl xs:rounded-br-3xl xs:p-4 cursor-pointer overflow-hidden rounded-lg">
+        <Link href={link} target="_blank" className="w-1/2 lg:w-full xs:rounded-2xl xs:rounded-br-3xl xs:p-4 cursor-pointer overflow-hidden rounded-lg">
           <FramerImage src={img} alt={title}
             className="w-full h-auto" 
             whileHover={{scale: 1.05}}
@@ -68,7 +68,7 @@ const Project = ({type, title, img, link, github}) => {
   return (
     <article className="h-full">
       <CardBox className="h-full flex-col justify-center p-6 shadow-2xl xs:p-4">
-        <Link href={link} className="w-full cursor-pointer overflow-hidden rounded-lg">
+        <Link href={link} target="_blank" className="w-full cursor-pointer overflow-hidden rounded-lg">
           <FramerImage src={img} alt={title} 
             className="w-full h-auto" 
             whileHover={{scale: 1.05}}
