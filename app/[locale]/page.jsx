@@ -46,7 +46,7 @@ export default function Home() {
               </p>
               <div className="flex items-center self-start mt-2 gap-4 lg:self-center">
                 <Button>
-                  <Link href="/resume/CV-Resume.pdf" target="_blank " download={true}>
+                  <Link href="/resume/VeraCruzDudu-Resume-CV.pdf" target="_blank " download={true}>
                     {t('resumeBtn')} 
                   </Link>
                   <LinkArrow className={'w-6'} />
